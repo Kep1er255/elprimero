@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>プロフィール編集</title>
+</head>
+<body>
+  <h1>プロフィール編集</h1>
+  <form action="/update-profile" method="POST" enctype="multipart/form-data">
+    <label for="name">名前:</label>
+    <input type="text" id="name" name="name" value="現在の名前" required>
+
+    <label for="icon">アイコン:</label>
+    <input type="file" id="icon" name="icon" accept="image/*" required>
+
+    <button type="submit">保存</button>
+  </form>
+</body>
+</html>
